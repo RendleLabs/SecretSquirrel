@@ -6,21 +6,24 @@
         <Assembly Name="Avalonia.Controls" Dynamic="Required All" />
         <Assembly Name="Avalonia.DesignerSupport" Dynamic="Required All" />
         <Assembly Name="Avalonia.Diagnostics" Dynamic="Required All" />
+        <Assembly Name="Avalonia.Direct2D1" Dynamic="Required All" />
+        <Assembly Name="Avalonia.DotNetCoreRuntime" Dynamic="Required All" />
+        <Assembly Name="Avalonia.Gtk3" Dynamic="Required All" />
         <Assembly Name="Avalonia.Input" Dynamic="Required All" />
         <Assembly Name="Avalonia.Interactivity" Dynamic="Required All" />
         <Assembly Name="Avalonia.Layout" Dynamic="Required All" />
-        <Assembly Name="Avalonia.Visuals" Dynamic="Required All" />
-        <Assembly Name="Avalonia.Styling" Dynamic="Required All" />
-        <Assembly Name="Avalonia.Themes.Default" Dynamic="Required All" />
+        <Assembly Name="Avalonia.Logging.Serilog" Dynamic="Required All" />
         <Assembly Name="Avalonia.Markup" Dynamic="Required All" />
         <Assembly Name="Avalonia.Markup.Xaml" Dynamic="Required All" />
-        <Assembly Name="Avalonia.DotNetCoreRuntime" Dynamic="Required All" />
-        <Assembly Name="Avalonia.Win32" Dynamic="Required All" />
-        <Assembly Name="Avalonia.Skia" Dynamic="Required All" />
-        <Assembly Name="Avalonia.Gtk3" Dynamic="Required All" />
         <Assembly Name="Avalonia.MonoMac" Dynamic="Required All" />
-        <Assembly Name="SkiaSharp" Dynamic="Required All" />
         <Assembly Name="Avalonia.ReactiveUI" Dynamic="Required All" />
+        <Assembly Name="Avalonia.Remote.Protocol" Dynamic="Required All" />
+        <Assembly Name="Avalonia.Skia" Dynamic="Required All" />
+        <Assembly Name="Avalonia.Styling" Dynamic="Required All" />
+        <Assembly Name="Avalonia.Themes.Default" Dynamic="Required All" />
+        <Assembly Name="Avalonia.Visuals" Dynamic="Required All" />
+        <Assembly Name="Avalonia.Win32" Dynamic="Required All" />
+        <Assembly Name="SkiaSharp" Dynamic="Required All" />
         <Assembly Name="SecretSquirrel" Dynamic="Required All" />
         <Assembly Name="mscorlib" Dynamic="Required All" />
         <Assembly Name="System.Memory" Dynamic="Required All" />
@@ -33,9 +36,10 @@
         <Assembly Name="KubernetesClient" Dynamic="Required All" />
         <Assembly Name="YamlDotNet" Dynamic="Required All" />
         <Assembly Name="BouncyCastle.Crypto" Dynamic="Required All" />
-        <Assembly Name="Fractions" Dynamic="Required All" />
         <Assembly Name="Microsoft.AspNetCore.JsonPatch" Dynamic="Required All" />
         <Assembly Name="Microsoft.AspNetCore.WebUtilities" Dynamic="Required All" />
+        <Assembly Name="Microsoft.Rest.ClientRuntime" Dynamic="Required All" />
         <Assembly Name="Newtonsoft.Json" Dynamic="Required All" />
+        <Assembly Name="ReactiveUI" Dynamic="Required All" />
     </Application>
 </Directives>

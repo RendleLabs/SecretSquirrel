@@ -10,7 +10,6 @@ namespace SecretSquirrel
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("HELLO");
             BuildAvaloniaApp().Start<MainWindow>();
         }
 
