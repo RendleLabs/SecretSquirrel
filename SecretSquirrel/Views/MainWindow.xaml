@@ -1,0 +1,42 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:SecretSquirrel.ViewModels;assembly=SecretSquirrel"
+        Title="SecretSquirrel">
+
+  <!-- Icon="resm:SecretSquirrel.Assets.avalonia-logo.ico" -->
+  <Design.DataContext>
+    <vm:MainWindowViewModel/>
+  </Design.DataContext>
+  
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+      </Grid.RowDefinitions>
+
+      <Grid Grid.Row="0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" FontSize="14" VerticalAlignment="Center">Context:</TextBlock>
+        <DropDown FontSize="14" Grid.Column="1" Items="{Binding Contexts}" SelectedItem="{Binding CurrentContext}">
+          <DropDown.ItemTemplate>
+            <DataTemplate>
+              <TextBlock FontSize="12" Text="{Binding Name}"></TextBlock>
+            </DataTemplate>
+          </DropDown.ItemTemplate>
+        </DropDown>
+      </Grid>
+
+      <ListBox Grid.Row="1" Items="{Binding Secrets}">
+        <ListBox.ItemTemplate>
+          <DataTemplate>
+              <TextBlock FontSize="12" Text="{Binding Name}"></TextBlock>
+          </DataTemplate>
+        </ListBox.ItemTemplate>
+      </ListBox>
+      
+    </Grid>
+  
+</Window>
