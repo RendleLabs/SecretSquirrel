@@ -28,18 +28,31 @@
         <Assembly Name="mscorlib" Dynamic="Required All" />
         <Assembly Name="System.Memory" Dynamic="Required All" />
         <Assembly Name="System.Private.CoreLib" Dynamic="Required All">
-            <Type Name="System.Action`2[System.Object,System.EventArgs]`"> 
+            <Type Name="System.Action`2[System.Object,System.EventArgs]`">
                 <Method Name="Invoke" Dynamic="Required All" />
             </Type>
         </Assembly>
         <Assembly Name="System.Runtime" Dynamic="Required All" />
+        <Assembly Name="System.Linq.Expressions">
+            <Type Name="System.Linq.Expressions.ExpressionCreator`1[[System.Action`2[[System.Object,System.Private.CoreLib],[System.Object,System.Private.CoreLib]],System.Private.CoreLib]]" Dynamic="Required All" />
+        </Assembly>
         <Assembly Name="KubernetesClient" Dynamic="Required All" />
         <Assembly Name="YamlDotNet" Dynamic="Required All" />
-        <Assembly Name="BouncyCastle.Crypto" Dynamic="Required All" />
+        <Assembly Name="BouncyCastle.Crypto" Dynamic="Required All">
+            <Type Name="Org.BouncyCastle.Security.DigestUtilities+DigestAlgorithm[]" Dynamic="Required All" />
+            <Type Name="Org.BouncyCastle.Security.CipherUtilities+CipherAlgorithm[]" Dynamic="Required All" />
+            <Type Name="Org.BouncyCastle.Security.CipherUtilities+CipherMode[]" Dynamic="Required All" />
+            <Type Name="Org.BouncyCastle.Security.CipherUtilities+CipherPadding[]" Dynamic="Required All" />
+            <Type Name="Org.BouncyCastle.Security.WrapperUtilities+WrapAlgorithm[]" Dynamic="Required All" />
+            <Type Name="Org.BouncyCastle.OpenSsl.PemUtilities+PemBaseAlg[]" Dynamic="Required All" />
+            <Type Name="Org.BouncyCastle.OpenSsl.PemUtilities+PemMode[]" Dynamic="Required All" />
+        </Assembly>
         <Assembly Name="Microsoft.AspNetCore.JsonPatch" Dynamic="Required All" />
         <Assembly Name="Microsoft.AspNetCore.WebUtilities" Dynamic="Required All" />
         <Assembly Name="Microsoft.Rest.ClientRuntime" Dynamic="Required All" />
-        <Assembly Name="Newtonsoft.Json" Dynamic="Required All" />
+        <Assembly Name="Newtonsoft.Json" Dynamic="Required All">
+            <Type Name="Newtonsoft.Json.Utilities.CollectionWrapper`1[[k8s.Models.V1Secret,KubernetesClient]]" Dynamic="Required All" />
+        </Assembly>
         <Assembly Name="ReactiveUI" Dynamic="Required All" />
     </Application>
 </Directives>
